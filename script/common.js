@@ -25,7 +25,7 @@ function addTitle(id1, id2){
        list.setAttribute('id', 'list-all')
        list.className='bg-[#F4F7FF] p-3 text-base rounded'   //style history title
        let time= new Date() //date
-       list.innerText= `You have Complete ${cartTitle} at ${time.toLocaleTimeString()}`;  //add to title newElement
+       list.innerText= `You have Complete The Task ${cartTitle} at ${time.toLocaleTimeString()}`;  //add to title newElement
        const historyUl=document.getElementById(id2)  //ul element get id
        historyUl.appendChild(list)
 }
