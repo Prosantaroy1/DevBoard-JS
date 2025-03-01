@@ -2,26 +2,61 @@
 // btn click part- card btn one
 document.getElementById('btn-one').addEventListener('click', ()=>{
      alert('Board Updated Successfully')
-     //task
-     const taskNumber=document.getElementById('task-num').innerText;
-     const convertTaskNum=parseInt(taskNumber);
-     document.getElementById('task-num').innerText=convertTaskNum-1;
-     // task o then alert
-     if(convertTaskNum == 1){
-          alert('Conngrates !! You have completed all current task.')
-     }
-     //nav mark
-     const navMark=document.getElementById('nav-mark').innerText;
-     const convertNavMark=parseInt(navMark);
-     document.getElementById('nav-mark').innerText=convertNavMark+1;
-     // cart -title
-     const cartTitle= document.getElementById('cart-title').innerText;
-     console.log(cartTitle);
-     const list=document.createElement('li')    //create element li
-     list.className='bg-red-300 p-3 text-base'
-     list.innerText=cartTitle;  //add to title newElement
-     const historyUl=document.getElementById('history-add')  //ul element get id
-     historyUl.appendChild(list)
+    
+     const tasked=taskFuction('task-num')  //taskNumber function
+     const navNum=navNumbers('nav-mark')   //nav number add fuc
+     const titleAdd=addTitle('cart-title','history-add') 
      //btn disable
      document.getElementById('btn-one').setAttribute('disabled', '');
+})
+
+//btn two
+document.getElementById('btn-two').addEventListener('click', ()=>{
+     alert('Board Updated Successfully')
+    
+     const tasked=taskFuction('task-num')  //taskNumber function
+     const navNum=navNumbers('nav-mark')   //nav number add fuc
+     const titleAdd=addTitle('cart-title-2','history-add') 
+     //btn disable
+     document.getElementById('btn-two').setAttribute('disabled', '');
+})
+//btn three
+document.getElementById('btn-three').addEventListener('click', ()=>{
+     alert('Board Updated Successfully')
+    
+     const tasked=taskFuction('task-num')  //taskNumber function
+     const navNum=navNumbers('nav-mark')   //nav number add fuc
+     const titleAdd=addTitle('cart-title-3','history-add') 
+     //btn disable
+     document.getElementById('btn-two').setAttribute('disabled', '');
+})
+//btn four
+document.getElementById('btn-four').addEventListener('click', ()=>{
+     alert('Board Updated Successfully')
+    
+     const tasked=taskFuction('task-num')  //taskNumber function
+     const navNum=navNumbers('nav-mark')   //nav number add fuc
+     const titleAdd=addTitle('cart-title-4','history-add') 
+     //btn disable
+     document.getElementById('btn-four').setAttribute('disabled', '');
+})
+//btn five
+document.getElementById('btn-five').addEventListener('click', ()=>{
+     alert('Board Updated Successfully')
+    
+     const tasked=taskFuction('task-num')  //taskNumber function
+     const navNum=navNumbers('nav-mark')   //nav number add fuc
+     const titleAdd=addTitle('cart-title-5','history-add') 
+     //btn disable
+     document.getElementById('btn-five').setAttribute('disabled', '');
+})
+//btn two
+document.getElementById('btn-six').addEventListener('click', ()=>{
+     alert('Board Updated Successfully')
+    
+     const tasked=taskFuction('task-num')  //taskNumber function
+     const navNum=navNumbers('nav-mark')   //nav number add fuc
+     const titleAdd=addTitle('cart-title-6','history-add') 
+     //btn disable
+     document.getElementById('btn-six').setAttribute('disabled', '');
 })

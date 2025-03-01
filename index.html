@@ -43,7 +43,7 @@
                             <img src="./assets/checkbox.png" alt="">
                             <div>
                                 <h4>Task Assigned</h4>
-                                <p class="font-semibold text-xl"><span id="task-num">1</span></p>
+                                <p class="font-semibold text-xl"><span id="task-num">6</span></p>
                             </div>
                         </div>
                         <!-- left-navigation part -->
@@ -83,7 +83,7 @@
                         <!-- two card -->
                          <div class="bg-[#F4F7FF] rounded-2xl p-4 shadow space-y-4">
                             <button class="btn btn-soft rounded-md border-0 bg-white">CloudSync</button>
-                            <h4 class="text-2xl font-semibold text-[#00303C]">Add Dark Mode</h4>
+                            <h4 id="cart-title-2" class="text-2xl font-semibold text-[#00303C]">Add Dark Mode</h4>
                             <p class="bg-white p-4 rounded-md text-[#6d6d6d]">
                                 Store the user's preference in localStorage, update CSS varia..
                             </p>
@@ -92,13 +92,13 @@
                                     <h4>Deadline</h4>
                                     <p class="text-base font-medium text-[#00303C]">21 March 2025</p>
                                 </div>
-                                <button class="btn btn-primary">Completed</button>
+                                <button id="btn-two" class="btn btn-primary">Completed</button>
                             </div>
                          </div>
                         <!-- three card -->
                          <div class="bg-[#F4F7FF] rounded-2xl p-4 shadow space-y-4">
                             <button class="btn btn-soft rounded-md border-0 bg-white">SwiftPay</button>
-                            <h4 class="text-2xl font-semibold text-[#00303C]">Optimize  Home page </h4>
+                            <h4 id="cart-title-3" class="text-2xl font-semibold text-[#00303C]">Optimize  Home page </h4>
                             <p class="bg-white p-4 rounded-md text-[#6d6d6d]">
                                 Debug using Chrome DevTools, check for overlappin...
                             </p>
@@ -107,13 +107,13 @@
                                     <h4>Deadline</h4>
                                     <p class="text-base font-medium text-[#00303C]">21 March 2025</p>
                                 </div>
-                                <button class="btn btn-primary">Completed</button>
+                                <button id="btn-three" class="btn btn-primary">Completed</button>
                             </div>
                          </div>
                         <!-- four card -->
                          <div class="bg-[#F4F7FF] rounded-2xl p-4 shadow space-y-4">
                             <button class="btn btn-soft rounded-md border-0 bg-white">Meta</button>
-                            <h4 class="text-2xl font-semibold text-[#00303C]">Add new emoji 🤲</h4>
+                            <h4 id="cart-title-4" class="text-2xl font-semibold text-[#00303C]">Add new emoji 🤲</h4>
                             <p class="bg-white p-4 rounded-md text-[#6d6d6d]">
                                 Store the user's preference in localStorage, update CSS varia..
                             </p>
@@ -122,13 +122,13 @@
                                     <h4>Deadline</h4>
                                     <p class="text-base font-medium text-[#00303C]">21 March 2025</p>
                                 </div>
-                                <button class="btn btn-primary">Completed</button>
+                                <button id="btn-four" class="btn btn-primary">Completed</button>
                             </div>
                          </div>
                         <!-- five card -->
                          <div class="bg-[#F4F7FF] rounded-2xl p-4 shadow space-y-4">
                             <button class="btn btn-soft rounded-md border-0 bg-white">Google LLC</button>
-                            <h4 class="text-2xl font-semibold text-[#00303C]">Integrate OpenAI API </h4>
+                            <h4 id="cart-title-5" class="text-2xl font-semibold text-[#00303C]">Integrate OpenAI API </h4>
                             <p class="bg-white p-4 rounded-md text-[#6d6d6d]">
                                 Debug using Chrome DevTools, check for overlappin...
                             </p>
@@ -137,13 +137,13 @@
                                     <h4>Deadline</h4>
                                     <p class="text-base font-medium text-[#00303C]">21 March 2025</p>
                                 </div>
-                                <button class="btn btn-primary">Completed</button>
+                                <button id="btn-five" class="btn btn-primary">Completed</button>
                             </div>
                          </div>
                         <!-- six card -->
                          <div class="bg-[#F4F7FF] rounded-2xl p-4 shadow space-y-4">
                             <button class="btn btn-soft rounded-md border-0 bg-white">Glassdoar</button>
-                            <h4 class="text-2xl font-semibold text-[#00303C]">Improve Job searching </h4>
+                            <h4 id="cart-title-6" class="text-2xl font-semibold text-[#00303C]">Improve Job searching </h4>
                             <p class="bg-white p-4 rounded-md text-[#6d6d6d]">
                                 Store the user's preference in localStorage, update CSS varia..
                             </p>
@@ -152,7 +152,7 @@
                                     <h4>Deadline</h4>
                                     <p class="text-base font-medium text-[#00303C]">21 March 2025</p>
                                 </div>
-                                <button class="btn btn-primary">Completed</button>
+                                <button id="btn-six" class="btn btn-primary">Completed</button>
                             </div>
                          </div>
                      </div>
@@ -163,10 +163,10 @@
                     <img src="./assets/activity.png" alt="">
                     <p class="text-xl text-[#00303C] font-medium">Activity Log</p>
                 </div>
-                <button class="btn btn-primary">Clear History</button>
+                <button id="history-deleted" class="btn btn-primary">Clear History</button>
                 <!-- add dynamic show click card -->
-                 <ul id="history-add">
-                    
+                 <ul id="history-add" class="p-3">
+                     
                  </ul>
               </div>
          </div>
@@ -175,6 +175,7 @@
 
     <!-- script -->
     <script src="./script/main.js"></script>
+    <script src="./script/common.js"></script>
 </body>
 
 </html>
