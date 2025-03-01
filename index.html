@@ -22,7 +22,7 @@
                 <ul class="flex items-center gap-x-8">
                     <li class="flex items-center gap-x-2 bg-slate-200 py-2 px-3 rounded-full">
                         <img class="w-6 h-6" src="./assets/checkbox.png" alt="">
-                        <p class="text-xl font-bold">23</p>
+                        <p id="nav-mark" class="text-xl font-bold">23</p>
                     </li>
                     <li>
                        <img src="./assets/theme-btn.png" alt="">
@@ -43,11 +43,11 @@
                             <img src="./assets/checkbox.png" alt="">
                             <div>
                                 <h4>Task Assigned</h4>
-                                <p class="font-semibold text-xl">0<span id="task-num">5</span></p>
+                                <p class="font-semibold text-xl"><span id="task-num">1</span></p>
                             </div>
                         </div>
                         <!-- left-navigation part -->
-                        <div class="bg-[#F4F7FF] rounded-md bg-gradient-to-tr from-[#3752FD] to-slate-100 col-span-2 flex justify-center items-center gap-x-3">
+                        <div class="bg-[#F4F7FF] rounded-md bg-gradient-to-tr from-[#3752FD]  to-slate-100  col-span-2 flex justify-center items-center gap-x-3">
                             <img src="./assets/board.png" alt="">
                             <div>
                                 <h4 class="text-xl font-semibold text-white">Discover Something</h4>
@@ -68,7 +68,7 @@
                         <!-- one card -->
                          <div class="bg-[#F4F7FF] rounded-2xl p-4 shadow space-y-4">
                             <button class="btn btn-soft rounded-md border-0 bg-white">Shop Ease</button>
-                            <h4 class="text-2xl font-semibold text-[#00303C]">Fix Mobile Button Issue </h4>
+                            <h4 id="cart-title" class="text-2xl font-semibold text-[#00303C]">Fix Mobile Button Issue </h4>
                             <p class="bg-white p-4 rounded-md text-[#6d6d6d]">
                                 Debug using Chrome DevTools, check for overlappin...
                             </p>
@@ -165,6 +165,9 @@
                 </div>
                 <button class="btn btn-primary">Clear History</button>
                 <!-- add dynamic show click card -->
+                 <ul id="history-add">
+                    
+                 </ul>
               </div>
          </div>
     </main>
