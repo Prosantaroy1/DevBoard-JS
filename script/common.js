@@ -32,6 +32,7 @@ function addTitle(id1, id2){
 
 //history clear btn
 document.getElementById('history-deleted').addEventListener('click', ()=>{
-    const listed=document.getElementById('list-all')
-    listed.remove();
+    const listed=document.getElementsByTagName('li')
+    listed.removeAll();
+
 })

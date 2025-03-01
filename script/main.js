@@ -1,3 +1,9 @@
+// backgroud chage
+
+document.getElementById('color-btn').addEventListener('click',()=>{
+     let colorNum=Math.floor(Math.random() * 10000);
+     document.getElementById('colorChnage').style.backgroundColor=`#34${colorNum}`
+})
 
 // btn click part- card btn one
 document.getElementById('btn-one').addEventListener('click', ()=>{
@@ -28,7 +34,7 @@ document.getElementById('btn-three').addEventListener('click', ()=>{
      const navNum=navNumbers('nav-mark')   //nav number add fuc
      const titleAdd=addTitle('cart-title-3','history-add') 
      //btn disable
-     document.getElementById('btn-two').setAttribute('disabled', '');
+     document.getElementById('btn-three').setAttribute('disabled', '');
 })
 //btn four
 document.getElementById('btn-four').addEventListener('click', ()=>{
