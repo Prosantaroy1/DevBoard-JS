@@ -23,7 +23,7 @@ function addTitle(id1, id2){
        const cartTitle= document.getElementById(id1).innerText;  //title get
        const list=document.createElement('li')    //create element li
        list.setAttribute('id', 'list-all')
-       list.className='bg-[#F4F7FF] p-3 text-base rounded'   //style history title
+       list.className='bg-[#F4F7FF] p-3 text-base deleted rounded'   //style history title
        let time= new Date() //date
        list.innerText= `You have Complete The Task ${cartTitle} at ${time.toLocaleTimeString()}`;  //add to title newElement
        const historyUl=document.getElementById(id2)  //ul element get id
@@ -32,7 +32,7 @@ function addTitle(id1, id2){
 
 //history clear btn
 document.getElementById('history-deleted').addEventListener('click', ()=>{
-    const listed=document.getElementsByTagName('li')
-    listed.removeAll();
+   const deleteList=document.getElementById('history-add')
+   deleteList.innerHTML='';
 
 })
