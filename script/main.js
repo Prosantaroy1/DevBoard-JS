@@ -16,33 +16,26 @@ function updateDate() {
      // Get the current date
      const date = new Date();
  
-     // Get correct day of the week (0 = Sunday, 6 = Saturday)
+     // day
      const day = date.getDay();
      const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-     document.getElementById('dayName').innerText = dayNames[day]; // 🗓 Sunday, Monday, etc.
+     document.getElementById('dayName').innerText = dayNames[day]; 
  
-     // Get the correct month, date, and year
-     const dated = date.getDate(); // Day of the month (1-31)
+     // month, date, and year
+     const dated = date.getDate(); // Day 
      const year = date.getFullYear();
      const month = date.getMonth();
      const monthAllName = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
      const monthName = monthAllName[month];
  
      // Update the HTML with the correct date
-     document.getElementById('dates').innerText = `${monthName} ${dated}, ${year}`; // 🗓 March 2, 2025
+     document.getElementById('dates').innerText = `${monthName} ${dated}, ${year}`;
  }
  
- // Run immediately when the script loads
- updateDate();
+ updateDate();  //fuc call
  
- // Update every 24 hours (86,400,000 ms) to ensure it changes daily
- setInterval(updateDate, 86400000);
+ setInterval(updateDate, 86400000);  //update date
  
- 
-
-
-
-
 
 // btn click part- card btn one
 document.getElementById('btn-one').addEventListener('click', () => {
